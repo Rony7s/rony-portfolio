@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="description" content="Md. Rony Ahmmed Shah – Junior Software Engineer, Laravel Developer, AI & EdTech Enthusiast. Portfolio showcasing projects, skills, and experience." />
+  <title>Md. Rony Ahmmed Shah | Junior Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" /> -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode" data-theme="dark">
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">R.</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Rony<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Rony Ahmmed</h1>
+      <div class="hero-roles">
+        <span class="role-prefix">I'm a </span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline">Building the future with code, curiosity, and a passion for educational technology.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary" download><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#projects" class="btn btn-outline"><i class="fas fa-eye"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Rony7s" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/Rony7s" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://facebook.com/EdTech.Engg" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="mailto:bdu.rony@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-img-frame">
+            <img src="img/Rony.jpg" alt="Rony Ahmmed Shah" class="about-img" />
+            <div class="img-badge img-badge-1"><i class="fas fa-code"></i> Developer</div>
+            <div class="img-badge img-badge-2"><i class="fas fa-graduation-cap"></i> EdTE</div>
+          </div>
+        </div>
+        <div class="about-text-col reveal">
+          <h3 class="about-name">Md. Rony Ahmmed Shah</h3>
+          <p class="about-bio">
+            I'm a 4th-year <strong>B.Sc. (Engg.) in Educational Technology & Engineering</strong> student at the <strong>University of Frontier Technology, Bangladesh (UFTB)</strong>. My passion lies at the intersection of software engineering, artificial intelligence, and educational technology — building tools that make learning more accessible, measurable, and effective.
+          </p>
+          <p class="about-bio">
+            With hands-on experience in Laravel, JavaScript, Python, and Flutter, I've shipped 11+ projects spanning web apps, mobile apps, AI tools, and educational platforms. I believe great software should solve real human problems — and education is the most human problem of all.
+          </p>
+          <div class="about-details">
+            <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span>Kaliakair, Gazipur, Bangladesh</span></div>
+            <div class="detail-item"><i class="fas fa-university"></i><span>UFTB – EdTE Department</span></div>
+            <div class="detail-item"><i class="fas fa-envelope"></i><span>bdu.rony@gmail.com</span></div>
+            <div class="detail-item"><i class="fas fa-phone"></i><span>01706-373000</span></div>
+          </div>
+          <!-- Education Cards -->
+          <div class="edu-cards">
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <strong>B.Sc. (Engg.) in EdTE</strong>
+                <span>UFTB · 2022–Present</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fas fa-school"></i></div>
+              <div>
+                <strong>HSC in Science – GPA 5.00</strong>
+                <span>Rajshahi Board · 2020</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fas fa-book"></i></div>
+              <div>
+                <strong>SSC in Science – GPA 5.00</strong>
+                <span>Rajshahi Board · 2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stats -->
+      <div class="stats-row reveal">
+        <div class="stat-card">
+          <div class="stat-number" data-target="13">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="20">0</div>
+          <div class="stat-label">Technologies Learned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Years of Study</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Olympiad Achievements</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header"><i class="fas fa-palette"></i> Frontend</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS3</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap 5</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Tailwind CSS</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java Fx</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header"><i class="fas fa-server"></i> Backend</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Laravel 12</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Firebase</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile & Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header"><i class="fas fa-mobile-alt"></i> Mobile & Tools</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Flutter / Dart</span><span>68%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Git & GitHub</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Android Studio</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C / C++ / Java</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>AR / VR / XR</span><span>55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header"><i class="fas fa-brain"></i> Interests & Soft Skills</div>
+          <div class="interest-tags">
+            <span class="tag"><i class="fas fa-robot"></i> Artificial Intelligence</span>
+            <span class="tag"><i class="fas fa-chalkboard-teacher"></i> Educational Technology</span>
+            <span class="tag"><i class="fas fa-chart-line"></i> Learning Analytics</span>
+            <span class="tag"><i class="fas fa-pencil-ruler"></i> UI/UX Design</span>
+            <span class="tag"><i class="fas fa-language"></i> Communicative English</span>
+            <span class="tag"><i class="fas fa-video"></i> Video Editing</span>
+            <span class="tag"><i class="fas fa-pen-nib"></i> Graphic Design</span>
+            <span class="tag"><i class="fas fa-blog"></i> Blogging</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience & Timeline</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 – Present</div>
+          <div class="timeline-card">
+            <h3>B.Sc. (Engg.) in Educational Technology & Engineering</h3>
+            <h4>University of Frontier Technology, Bangladesh (UFTB)</h4>
+            <p>Currently in 4th year, building deep knowledge in software engineering, AI, educational data science, AR/VR, and mobile development. Completed 11+ academic and personal projects.</p>
+            <div class="timeline-tags">
+              <span>Laravel</span><span>Python</span><span>Flutter</span><span>AR/VR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 – 2024</div>
+          <div class="timeline-card">
+            <h3>Digital Evaluation System – Lead Developer</h3>
+            <h4>University Project · UFTB</h4>
+            <p>Designed and built a full-stack online exam management platform using Laravel, Livewire, and MySQL. Enabled teachers to create MCQ exams, auto-grade results, and publish analytics.</p>
+            <div class="timeline-tags">
+              <span>Laravel</span><span>Livewire</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-card">
+            <h3>AI-Based Article Generator</h3>
+            <h4>Independent Research Project</h4>
+            <p>Built an NLP-powered tool that auto-generates educational and analytical articles. Explored transformer-based language models and prompt engineering for structured content creation.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>NLP</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-card">
+            <h3>Finalist – National STEAM Olympiad 2024</h3>
+            <h4>Technology Category · Bangladesh</h4>
+            <p>Reached the national finals in the Technology track of the STEAM Olympiad, competing with top student innovators across Bangladesh.</p>
+            <div class="timeline-tags">
+              <span>Achievement</span><span>Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-card">
+            <h3>7th Place – Bangladesh Science Olympiad 2020</h3>
+            <h4>Science Category · Rajshahi Division</h4>
+            <p>Secured 7th place in the Rajshahi Division Science Olympiad, demonstrating strong analytical and scientific problem-solving abilities.</p>
+            <div class="timeline-tags">
+              <span>Achievement</span><span>Science</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 – Present</div>
+          <div class="timeline-card">
+            <h3>Tech Community & Peer Collaboration</h3>
+            <h4>UFTB Campus · EdTE Department</h4>
+            <p>Active contributor to department study groups, workshop sessions, and collaborative coding projects. Mentored peers in web development and guided junior students in project ideation.</p>
+            <div class="timeline-tags">
+              <span>Mentoring</span><span>Teamwork</span><span>Community</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="games">Games</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder p1"><i class="fas fa-clipboard-check"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Digital Evaluation System</h3>
+            <p>Full-stack online MCQ exam platform for teachers to create, grade, and analyze student performance digitally.</p>
+            <div class="project-tags">
+              <span>Laravel</span><span>Livewire</span><span>MySQL</span><span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ai">
+          <div class="project-img">
+            <div class="project-img-placeholder p2"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI-Based Article Generator</h3>
+            <p>NLP-powered tool that generates educational and analytical articles using transformer-based language models.</p>
+            <div class="project-tags">
+              <span>Python</span><span>NLP</span><span>AI</span><span>ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder p3"><i class="fas fa-calendar-alt"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Schedule Master</h3>
+            <p>University timetable management system for organizing class schedules, batches, and faculty assignments.</p>
+            <div class="project-tags">
+              <span>Laravel</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder p4"><i class="fas fa-users"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>BDU Family</h3>
+            <p>Social directory connecting BDU students, clubs, and societies with verified profiles and links.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder p5"><i class="fas fa-sticky-note"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>MyNotebook</h3>
+            <p>PHP-based note-taking app with user authentication and full CRUD operations for personal notes.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="games">
+          <div class="project-img">
+            <div class="project-img-placeholder p6"><i class="fas fa-gamepad"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Game-Bornomala</h3>
+            <p>Interactive educational JavaScript game to make learning the Bangla alphabet engaging and fun for children.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>EdTech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="tools">
+          <div class="project-img">
+            <div class="project-img-placeholder p7"><i class="fas fa-tools"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>EduTools</h3>
+            <p>Comprehensive educational utility platform: CGPA calculator, age calculator, QR generator, BMI calculator, stopwatch.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="tools">
+          <div class="project-img">
+            <div class="project-img-placeholder p8"><i class="fas fa-id-card"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Student ID Card Generator</h3>
+            <p>Online tool to generate student ID cards with custom fields and downloadable output.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="tools">
+          <div class="project-img">
+            <div class="project-img-placeholder p9"><i class="fas fa-map-marked-alt"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="overlay-btn overlay-btn-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Smart Land Area Calculator</h3>
+            <p>Web-based land area calculator for various land types, built with JavaScript geometry algorithms.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Beyond Code</span>
+        <h2 class="section-title">Activities & Achievements</h2>
+      </div>
+      <div class="activities-grid">
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-brain"></i></div>
+          <h3>President — UFTB AI Community</h3>
+          <p>Leading the <strong>UFTB AI Community</strong> by organizing AI-focused workshops, tech discussions, webinars, and
+            collaborative learning activities to inspire students in artificial intelligence, innovation, and modern technology
+            development.</p>
+          <div class="activity-meta">
+            <p><i class="fas fa-map-marker-alt"></i> Kaliakair, Gazipur, Dhaka, Bangladesh</p>
+            <p><i class="fas fa-calendar-alt"></i> Nov 2025 – Present</p>
+          </div>
+          <a href="https://www.facebook.com/Ai.UFTB/" target="_blank" class="activity-link">
+            <i class="fab fa-facebook"></i> Visit Community
+          </a>
+          <span class="activity-badge">👑 President</span>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-trophy"></i></div>
+          <h3>National STEAM Olympiad 2024</h3>
+          <p>Reached the national finals in the Technology category, showcasing innovative tech projects among Bangladesh's top student developers.</p>
+          <span class="activity-badge">🏆 Finalist</span>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-atom"></i></div>
+          <h3>Bangladesh Science Olympiad 2020</h3>
+          <p>Secured 7th place in the Rajshahi Division, demonstrating exceptional analytical and problem-solving skills.</p>
+          <span class="activity-badge">🥇 7th Place – Rajshahi Division</span>
+        </div>
+        
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Research: AI in Education</h3>
+          <p>Exploring AI-powered learning analytics, adaptive learning systems, and the use of NLP in educational content generation and assessment.</p>
+          <span class="activity-badge">🔬 Researcher</span>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Peer Mentoring & Tutoring</h3>
+          <p>Mentored fellow students in web development, programming fundamentals, and guided project ideation and development practices.</p>
+          <span class="activity-badge">👨‍🏫 Mentor</span>
+        </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-icon"><i class="fas fa-pen-fancy"></i></div>
+          <h3>Content Creation & Blogging</h3>
+          <p>Creates educational digital content, tutorial blogs, and video content focused on programming, technology, and learning strategies.</p>
+          <span class="activity-badge">✍️ Creator</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Open to Junior Software Engineer roles, internships, and exciting collaborations.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:bdu.rony@gmail.com">bdu.rony@gmail.com</a><br/>
+              <a href="mailto:2002035@icte.uftb.ac.bd">2002035@icte.uftb.ac.bd</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:01706373000">01706-373000</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <span>UFTB Boys Hostel, Kaliakair<br/>Gazipur-1751, Bangladesh</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/Rony7s" target="_blank" class="social-link"><i class="fab fa-github"></i><span>GitHub</span></a>
+            <a href="https://linkedin.com/in/Rony7s" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+            <a href="https://facebook.com/EdTech.Engg" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job opportunity / Collaboration..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Rony<span>.</span></span>
+          <p>Junior Software Engineer · Laravel Developer · AI & EdTech Enthusiast</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Rony7s" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="mailto:bdu.rony@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Md. Rony Ahmmed Shah. Built with <span style="color:var(--accent)">♥</span> in Bangladesh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="mail.js"></script>
+</body>
+</html>
